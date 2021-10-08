@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "033B1045-A3D1-4200-BD26-41C0A9C36CD3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "931C963A-A411-4B37-9863-AA15354E7FAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "29th-week1-homework/JoinViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "JoinViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "931C963A-A411-4B37-9863-AA15354E7FAD - ebed34719fbcb5aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9th_week1_homework.JoinViewController.checkBoxView.getter : Swift.Optional&lt;_9th_week1_homework.CheckBoxView&gt;"
+                  moduleName = "29th-week1-homework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/Desktop/Doing/29th-week1-homework/29th-week1-homework/JoinViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "931C963A-A411-4B37-9863-AA15354E7FAD - 6174e31dff40e1a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9th_week1_homework.JoinViewController.checkBoxView.setter : Swift.Optional&lt;_9th_week1_homework.CheckBoxView&gt;"
+                  moduleName = "29th-week1-homework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/Desktop/Doing/29th-week1-homework/29th-week1-homework/JoinViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "931C963A-A411-4B37-9863-AA15354E7FAD - a9d9ef8e6cb1a8e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9th_week1_homework.JoinViewController.checkBoxView.modify : Swift.Optional&lt;_9th_week1_homework.CheckBoxView&gt;"
+                  moduleName = "29th-week1-homework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/Desktop/Doing/29th-week1-homework/29th-week1-homework/JoinViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "931C963A-A411-4B37-9863-AA15354E7FAD - e75a4bab984cc6e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9th_week1_homework.JoinViewController.checkBoxView.modify : Swift.Optional&lt;_9th_week1_homework.CheckBoxView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "29th-week1-homework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/Desktop/Doing/29th-week1-homework/29th-week1-homework/JoinViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "931C963A-A411-4B37-9863-AA15354E7FAD - 69c6ad406ec8e206"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9th_week1_homework.JoinViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; _9th_week1_homework.JoinViewController"
+                  moduleName = "29th-week1-homework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/Desktop/Doing/29th-week1-homework/29th-week1-homework/JoinViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "738">
+               </Location>
+               <Location
+                  uuid = "931C963A-A411-4B37-9863-AA15354E7FAD - 3f5129fc1c0f80f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9th_week1_homework.JoinViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;_9th_week1_homework.JoinViewController&gt;"
+                  moduleName = "29th-week1-homework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/Desktop/Doing/29th-week1-homework/29th-week1-homework/JoinViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "679">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
