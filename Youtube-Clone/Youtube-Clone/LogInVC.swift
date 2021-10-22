@@ -38,7 +38,7 @@ class LogInVC: UIViewController {
         
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(inactive), name: UITextField.textDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(deactivate), name: UITextField.textDidChangeNotification, object: nil)
         
        layout()
        
@@ -69,7 +69,7 @@ class LogInVC: UIViewController {
     }
     
     
-    @objc func inactive(){
+    @objc func deactivate(){
         let filteredArray = [nameTextField,infoTextField,pwTextField].filter { $0?.text == "" }
         if !filteredArray.isEmpty {
             nextButton.isUserInteractionEnabled = false
