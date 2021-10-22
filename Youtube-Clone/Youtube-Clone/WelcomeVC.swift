@@ -13,6 +13,16 @@ class WelcomeVC: UIViewController {
   
     @IBOutlet weak var confirmButton: UIButton!
     
+    @IBAction func touchUpConfirmButton(_ sender: Any) {
+        
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBarController")as? TabBarController else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
+        
+        
+    }
     var name: String?
     
     override func viewDidLoad() {

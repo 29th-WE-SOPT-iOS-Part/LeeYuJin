@@ -270,6 +270,9 @@
                                     <constraint firstAttribute="height" constant="60" id="Lxx-oW-7se"/>
                                 </constraints>
                                 <state key="normal" title="확인"/>
+                                <connections>
+                                    <action selector="touchUpConfirmButton:" destination="5CJ-76-QKl" eventType="touchUpInside" id="2tW-3o-ukp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000님  환영합니다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dME-Mk-D7J">
                                 <rect key="frame" x="117.66666666666667" y="325" width="139.66666666666663" height="71.666666666666686"/>
@@ -310,6 +313,97 @@
             </objects>
             <point key="canvasLocation" x="2350" y="72"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="MFZ-y1-v19">
+            <objects>
+                <viewController storyboardIdentifier="SubscribeVC" id="v6f-u2-P8B" customClass="SubscribeVC" customModule="Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uhg-vY-YsB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="f4n-CU-Vtc"/>
+                        <color key="backgroundColor" red="0.66632974638931375" green="0.87019477889995378" blue="0.51596302062853339" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="N5j-Px-uPC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWd-gP-mkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4262" y="231"/>
+        </scene>
+        <!--LibraryVC-->
+        <scene sceneID="n6k-uM-Igs">
+            <objects>
+                <viewController storyboardIdentifier="LibraryVC" id="iOl-83-mTq" customClass="LibraryVC" customModule="Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Az-RI-aqK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h84-jS-LOy"/>
+                        <color key="backgroundColor" red="0.80236946151714128" green="0.3406207705362081" blue="0.3267143357639683" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44r-jj-0UJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4929" y="231"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="IPb-9a-syh">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="a0W-Of-WIs" customClass="HomeVC" customModule="Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oav-VK-7V4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vSh-58-bHT"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="nIb-oZ-hZn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TE-rR-PyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4262" y="-426"/>
+        </scene>
+        <!--ShortsVC-->
+        <scene sceneID="7AX-Jd-Mdc">
+            <objects>
+                <viewController storyboardIdentifier="ShortsVC" id="hQ8-BB-aIz" customClass="ShortsVC" customModule="Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ey-PY-Mq5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0y0-f2-vEg"/>
+                        <color key="backgroundColor" red="0.58954650630000005" green="0.4830486926" blue="0.80110908280000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcc-Mv-BvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4929" y="-426"/>
+        </scene>
+        <!--AdditionVC-->
+        <scene sceneID="daa-L2-NUV">
+            <objects>
+                <viewController storyboardIdentifier="AdditionVC" id="ZL9-G3-iId" customClass="AdditionVC" customModule="Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lA8-Fj-5gc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s4R-rj-UPv"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atg-Q2-8Lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5601" y="-426"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5Ji-xU-8Zu">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="gWl-Vm-lFl" customClass="TabBarController" customModule="Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ngS-Th-LF9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k94-C2-aiZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3345" y="-122"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8hs-QD-bUA">
             <objects>
@@ -333,6 +427,12 @@
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
