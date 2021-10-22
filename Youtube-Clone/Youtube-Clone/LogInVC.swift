@@ -51,17 +51,17 @@ class LogInVC: UIViewController {
         nextButton.tintColor = UIColor.gray
         
         nameTextField.layer.cornerRadius = 10
-        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        nameTextField.layer.borderColor = UIColor.textfieldborder?.cgColor
         nameTextField.layer.borderWidth = 1.0
         nameTextField.addLeftPadding()
         
         infoTextField.layer.cornerRadius = 10
-        infoTextField.layer.borderColor = UIColor.lightGray.cgColor
+        infoTextField.layer.borderColor = UIColor.textfieldborder?.cgColor
         infoTextField.layer.borderWidth = 1.0
         infoTextField.addLeftPadding()
         
         pwTextField.layer.cornerRadius = 10
-        pwTextField.layer.borderColor = UIColor.lightGray.cgColor
+        pwTextField.layer.borderColor = UIColor.textfieldborder?.cgColor
         pwTextField.layer.borderWidth = 1.0
         pwTextField.addLeftPadding()
         
@@ -88,7 +88,7 @@ class LogInVC: UIViewController {
 extension UITextField{
     func addLeftPadding() {
         
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: self.frame.height))
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 14, height: self.frame.height))
             self.leftView = paddingView
             self.leftViewMode = ViewMode.always
         
@@ -97,6 +97,9 @@ extension UITextField{
 
 extension UIColor{
     class var facebookblue: UIColor? {return UIColor(named: "facebookblue")}
+    class var textfieldborder: UIColor? {return UIColor(named: "textfieldborder")}
+   
+    
 }
 
 

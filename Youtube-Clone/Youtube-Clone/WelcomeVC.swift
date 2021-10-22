@@ -38,7 +38,7 @@ class WelcomeVC: UIViewController {
     
     func setWelcomeLabel(){
         if let msg = name{
-            welcomeLabel.text = msg + "님 환영합니다!"
+            welcomeLabel.text = msg + "님 \n 환영합니다!"
         }
     }
     
