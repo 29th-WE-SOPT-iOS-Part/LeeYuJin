@@ -77,7 +77,7 @@ class JoinVC: UIViewController {
         } else {
     
             nextButton.isUserInteractionEnabled = true
-            nextButton.backgroundColor = UIColor(red: 66/255, green: 133/255, blue: 244/255, alpha: 1)
+            nextButton.backgroundColor = .facebookblue
         }
     }
     
@@ -106,7 +106,7 @@ extension JoinVC: CheckBoxDelegate {
             cb.checkLabel.textColor = UIColor.white
             cb.checkBoxView.layer.borderWidth = 0
             cb.checkBoxUIView.layer.cornerRadius = 5
-            cb.checkBoxUIView.backgroundColor = UIColor(red: 66/255, green: 133/255, blue: 244/255, alpha: 1)
+            cb.checkBoxUIView.backgroundColor = .facebookblue
             
             pwTextField.isSecureTextEntry = false
         }

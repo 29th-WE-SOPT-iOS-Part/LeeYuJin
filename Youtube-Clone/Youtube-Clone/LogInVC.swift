@@ -78,7 +78,7 @@ class LogInVC: UIViewController {
         } else {
     
             nextButton.isUserInteractionEnabled = true
-            nextButton.tintColor = UIColor(red: 66/255, green: 133/255, blue: 244/255, alpha: 1)
+            nextButton.tintColor = .facebookblue
         }
     }
 
@@ -93,6 +93,10 @@ extension UITextField{
             self.leftViewMode = ViewMode.always
         
     }
+}
+
+extension UIColor{
+    class var facebookblue: UIColor? {return UIColor(named: "facebookblue")}
 }
 
 

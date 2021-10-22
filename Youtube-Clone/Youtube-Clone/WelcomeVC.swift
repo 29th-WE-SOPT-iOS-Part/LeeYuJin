@@ -29,7 +29,7 @@ class WelcomeVC: UIViewController {
      
         confirmButton.setTitleColor(.white,for: .normal)
         confirmButton.layer.cornerRadius = 10
-        confirmButton.backgroundColor = UIColor(red: 66/255, green: 133/255, blue: 244/255, alpha: 1)
+        confirmButton.backgroundColor = .facebookblue
         
      
          
