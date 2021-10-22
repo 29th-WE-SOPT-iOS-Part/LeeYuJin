@@ -12,25 +12,25 @@
 		6A4E1E49270F504300160586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E1E47270F504300160586 /* Main.storyboard */; };
 		6A4E1E4B270F504C00160586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E1E4A270F504C00160586 /* Assets.xcassets */; };
 		6A4E1E4E270F504C00160586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E1E4C270F504C00160586 /* LaunchScreen.storyboard */; };
-		6A4E1E65270F63FB00160586 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E64270F63FB00160586 /* LogInViewController.swift */; };
-		6A4E1E68270F643400160586 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E67270F643400160586 /* JoinViewController.swift */; };
-		6A4E1E6C270F743E00160586 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E6B270F743D00160586 /* WelcomeViewController.swift */; };
+		6A4E1E65270F63FB00160586 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E64270F63FB00160586 /* LogInVC.swift */; };
+		6A4E1E68270F643400160586 /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E67270F643400160586 /* JoinVC.swift */; };
+		6A4E1E6C270F743E00160586 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E6B270F743D00160586 /* WelcomeVC.swift */; };
 		6A4E1E71271017B500160586 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E1E70271017B400160586 /* CheckBoxView.xib */; };
 		6A4E1E79271017E900160586 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E78271017E900160586 /* CheckBoxView.swift */; };
 		6A4E1E7C271017F800160586 /* CheckBoxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E7B271017F800160586 /* CheckBoxDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A4E1E3E270F504300160586 /* 29th-week1-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29th-week1-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A4E1E3E270F504300160586 /* Youtube-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4E1E41270F504300160586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A4E1E43270F504300160586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6A4E1E48270F504300160586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A4E1E4A270F504C00160586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A4E1E4D270F504C00160586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A4E1E4F270F504C00160586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A4E1E64270F63FB00160586 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		6A4E1E67270F643400160586 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
-		6A4E1E6B270F743D00160586 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6A4E1E64270F63FB00160586 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		6A4E1E67270F643400160586 /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
+		6A4E1E6B270F743D00160586 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		6A4E1E70271017B400160586 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
 		6A4E1E78271017E900160586 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		6A4E1E7B271017F800160586 /* CheckBoxDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		6A4E1E3F270F504300160586 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A4E1E3E270F504300160586 /* 29th-week1-homework.app */,
+				6A4E1E3E270F504300160586 /* Youtube-Clone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,11 +73,12 @@
 				6A4E1E4A270F504C00160586 /* Assets.xcassets */,
 				6A4E1E4C270F504C00160586 /* LaunchScreen.storyboard */,
 				6A4E1E4F270F504C00160586 /* Info.plist */,
-				6A4E1E64270F63FB00160586 /* LogInViewController.swift */,
-				6A4E1E67270F643400160586 /* JoinViewController.swift */,
-				6A4E1E6B270F743D00160586 /* WelcomeViewController.swift */,
+				6A4E1E64270F63FB00160586 /* LogInVC.swift */,
+				6A4E1E67270F643400160586 /* JoinVC.swift */,
+				6A4E1E6B270F743D00160586 /* WelcomeVC.swift */,
 			);
-			path = "29th-week1-homework";
+			name = "29th-week1-homework";
+			path = "Youtube-Clone";
 			sourceTree = "<group>";
 		};
 		6A4E1E6F2710178300160586 /* CheckBox */ = {
@@ -93,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A4E1E3D270F504300160586 /* 29th-week1-homework */ = {
+		6A4E1E3D270F504300160586 /* Youtube-Clone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A4E1E52270F504C00160586 /* Build configuration list for PBXNativeTarget "29th-week1-homework" */;
+			buildConfigurationList = 6A4E1E52270F504C00160586 /* Build configuration list for PBXNativeTarget "Youtube-Clone" */;
 			buildPhases = (
 				6A4E1E3A270F504300160586 /* Sources */,
 				6A4E1E3B270F504300160586 /* Frameworks */,
@@ -105,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = "29th-week1-homework";
+			name = "Youtube-Clone";
 			productName = "29th-week1-homework";
-			productReference = 6A4E1E3E270F504300160586 /* 29th-week1-homework.app */;
+			productReference = 6A4E1E3E270F504300160586 /* Youtube-Clone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A4E1E39270F504300160586 /* Build configuration list for PBXProject "29th-week1-homework" */;
+			buildConfigurationList = 6A4E1E39270F504300160586 /* Build configuration list for PBXProject "Youtube-Clone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A4E1E3D270F504300160586 /* 29th-week1-homework */,
+				6A4E1E3D270F504300160586 /* Youtube-Clone */,
 			);
 		};
 /* End PBXProject section */
@@ -161,12 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A4E1E65270F63FB00160586 /* LogInViewController.swift in Sources */,
+				6A4E1E65270F63FB00160586 /* LogInVC.swift in Sources */,
 				6A4E1E79271017E900160586 /* CheckBoxView.swift in Sources */,
 				6A4E1E42270F504300160586 /* AppDelegate.swift in Sources */,
 				6A4E1E44270F504300160586 /* SceneDelegate.swift in Sources */,
-				6A4E1E68270F643400160586 /* JoinViewController.swift in Sources */,
-				6A4E1E6C270F743E00160586 /* WelcomeViewController.swift in Sources */,
+				6A4E1E68270F643400160586 /* JoinVC.swift in Sources */,
+				6A4E1E6C270F743E00160586 /* WelcomeVC.swift in Sources */,
 				6A4E1E7C271017F800160586 /* CheckBoxDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,12 +317,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H85AXMVD3;
-				INFOPLIST_FILE = "29th-week1-homework/Info.plist";
+				INFOPLIST_FILE = "Youtube-Clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.xoul.-9th-week1-homework";
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.xoul.Youtube-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,12 +336,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H85AXMVD3;
-				INFOPLIST_FILE = "29th-week1-homework/Info.plist";
+				INFOPLIST_FILE = "Youtube-Clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.xoul.-9th-week1-homework";
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.xoul.Youtube-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A4E1E39270F504300160586 /* Build configuration list for PBXProject "29th-week1-homework" */ = {
+		6A4E1E39270F504300160586 /* Build configuration list for PBXProject "Youtube-Clone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A4E1E50270F504C00160586 /* Debug */,
@@ -359,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A4E1E52270F504C00160586 /* Build configuration list for PBXNativeTarget "29th-week1-homework" */ = {
+		6A4E1E52270F504C00160586 /* Build configuration list for PBXNativeTarget "Youtube-Clone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A4E1E53270F504C00160586 /* Debug */,

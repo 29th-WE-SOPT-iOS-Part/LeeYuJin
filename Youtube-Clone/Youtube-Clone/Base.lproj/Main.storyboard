@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In View Controller-->
+        <!--Log InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInVC" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="72.991071428571431"/>
         </scene>
-        <!--Join View Controller-->
+        <!--JoinVC-->
         <scene sceneID="nSa-sr-YAP">
             <objects>
-                <viewController storyboardIdentifier="JoinViewController" id="BB2-5V-5Zk" customClass="JoinViewController" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JoinVC" id="BB2-5V-5Zk" customClass="JoinVC" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JrL-Uv-bB8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="1669.5652173913045" y="72.991071428571431"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="LY1-Vz-Ebs">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="5CJ-76-QKl" customClass="WelcomeViewController" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" id="5CJ-76-QKl" customClass="WelcomeVC" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MDg-Sf-JZ8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

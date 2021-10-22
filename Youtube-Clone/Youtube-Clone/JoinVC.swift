@@ -1,5 +1,5 @@
 //
-//  JoinViewController.swift
+//  JoinVC.swift
 //  29th-week1-homework
 //
 //  Created by 이유진 on 2021/10/08.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JoinViewController: UIViewController {
+class JoinVC: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var infoTextField: UITextField!
@@ -55,7 +55,7 @@ class JoinViewController: UIViewController {
     }
     
     @IBAction func touchUpNextButton(_ sender: Any) {
-        guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+        guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
         nextVC.name = nameTextField.text
         
@@ -89,7 +89,7 @@ class JoinViewController: UIViewController {
 }
 
 
-extension JoinViewController: CheckBoxDelegate {
+extension JoinVC: CheckBoxDelegate {
     //Delegate 함수 구현
     func checkBoxHighlight(cb: CheckBoxView) {
         //비밀번호 표시 체크 해제 할때

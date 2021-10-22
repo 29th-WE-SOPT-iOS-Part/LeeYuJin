@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  WelcomeVC.swift
 //  29th-week1-homework
 //
 //  Created by 이유진 on 2021/10/08.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
   

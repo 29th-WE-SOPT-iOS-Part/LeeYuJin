@@ -1,5 +1,5 @@
 //
-//  LogInViewController.swift
+//  LogInVC.swift
 //  29th-week1-homework
 //
 //  Created by 이유진 on 2021/10/08.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInVC: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var infoTextField: UITextField!
@@ -18,14 +18,14 @@ class LogInViewController: UIViewController {
 
     @IBAction func touchUpJoinButton(_ sender: Any) {
         
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "JoinViewController") else {return}
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "JoinVC") else {return}
         
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     @IBAction func touchUpNextButton(_ sender: Any) {
         
-        guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+        guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
         nextVC.name = nameTextField.text
         
