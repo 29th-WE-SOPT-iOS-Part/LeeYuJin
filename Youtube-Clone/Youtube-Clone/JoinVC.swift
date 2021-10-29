@@ -38,17 +38,17 @@ class JoinVC: UIViewController {
          
 
         nameTextField.layer.cornerRadius = 10
-        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        nameTextField.layer.borderColor = UIColor.textfieldborder?.cgColor
         nameTextField.layer.borderWidth = 1.0
         nameTextField.addLeftPadding()
         
         infoTextField.layer.cornerRadius = 10
-        infoTextField.layer.borderColor = UIColor.lightGray.cgColor
+        infoTextField.layer.borderColor = UIColor.textfieldborder?.cgColor
         infoTextField.layer.borderWidth = 1.0
         infoTextField.addLeftPadding()
         
         pwTextField.layer.cornerRadius = 10
-        pwTextField.layer.borderColor = UIColor.lightGray.cgColor
+        pwTextField.layer.borderColor = UIColor.textfieldborder?.cgColor
         pwTextField.layer.borderWidth = 1.0
         pwTextField.addLeftPadding()
         
@@ -95,7 +95,7 @@ extension JoinVC: CheckBoxDelegate {
         //비밀번호 표시 체크 해제 할때
         if cb.checkLabel.isHidden == false {
             cb.checkLabel.isHidden = true
-            cb.checkBoxView.layer.borderColor = UIColor.gray.cgColor
+            cb.checkBoxView.layer.borderColor = UIColor.textfieldborder?.cgColor
             cb.checkBoxView.layer.borderWidth = 1
             cb.checkBoxUIView.backgroundColor = UIColor.white
             

@@ -13,6 +13,24 @@ class WelcomeVC: UIViewController {
   
     @IBOutlet weak var confirmButton: UIButton!
     
+    @IBAction func touchUpOtherAccount(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "LogInVC")as? LogInVC else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
+        
+    }
+    @IBAction func touchUpConfirmButton(_ sender: Any) {
+        
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBarController")as? TabBarController else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
+        
+        
+    }
     var name: String?
     
     override func viewDidLoad() {
@@ -38,7 +56,7 @@ class WelcomeVC: UIViewController {
     
     func setWelcomeLabel(){
         if let msg = name{
-            welcomeLabel.text = msg + "님 환영합니다!"
+            welcomeLabel.text = msg + "님 \n 환영합니다!"
         }
     }
     
