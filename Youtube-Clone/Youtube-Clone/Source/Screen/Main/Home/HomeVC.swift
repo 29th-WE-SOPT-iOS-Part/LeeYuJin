@@ -28,8 +28,6 @@ class HomeVC: UIViewController {
         channelCollectionView.dataSource = self
         channelCollectionView.delegate = self
         
-        
-        // Do any additional setup after loading the view.
     }
     
     func registerXib() {
