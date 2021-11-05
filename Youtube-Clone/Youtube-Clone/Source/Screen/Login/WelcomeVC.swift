@@ -14,12 +14,8 @@ class WelcomeVC: UIViewController {
     @IBOutlet weak var confirmButton: UIButton!
     
     @IBAction func touchUpOtherAccount(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "LogInVC")as? LogInVC else {return}
-        
-        nextVC.modalPresentationStyle = .fullScreen
-        nextVC.modalTransitionStyle = .crossDissolve
-        self.present(nextVC, animated: true, completion: nil)
-        
+      
+        self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func touchUpConfirmButton(_ sender: Any) {
         

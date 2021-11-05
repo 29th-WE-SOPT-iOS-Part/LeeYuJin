@@ -58,10 +58,8 @@ class JoinVC: UIViewController {
         guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
         nextVC.name = nameTextField.text
-        
-        nextVC.modalPresentationStyle = .fullScreen
-        nextVC.modalTransitionStyle = .crossDissolve
-        self.present(nextVC, animated: true, completion: nil)
+       
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     

@@ -29,9 +29,7 @@ class LogInVC: UIViewController {
         
         nextVC.name = nameTextField.text
         
-        nextVC.modalPresentationStyle = .fullScreen
-        nextVC.modalTransitionStyle = .crossDissolve
-        self.present(nextVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextVC, animated: true)
         
     }
     override func viewDidLoad() {
@@ -43,6 +41,12 @@ class LogInVC: UIViewController {
        layout()
        
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        nameTextField.text = ""
+        infoTextField.text = ""
+        pwTextField.text = ""
     }
     
     func layout() {
