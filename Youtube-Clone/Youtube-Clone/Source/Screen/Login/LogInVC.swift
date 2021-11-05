@@ -83,6 +83,7 @@ class LogInVC: UIViewController {
     
             nextButton.isUserInteractionEnabled = true
             nextButton.tintColor = .facebookblue
+     
         }
     }
 

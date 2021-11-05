@@ -22,6 +22,13 @@ class HomeVC: UIViewController {
         initChannelInfoList()
         
         registerXib()
+        setDelegation()
+        
+        
+        
+    }
+    
+    func setDelegation(){
         videoTableView.dataSource = self
         videoTableView.delegate = self
         
