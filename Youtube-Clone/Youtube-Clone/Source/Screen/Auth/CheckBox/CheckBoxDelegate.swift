@@ -7,6 +7,6 @@
 
 import UIKit
 
-protocol CheckBoxDelegate: class {
+protocol CheckBoxDelegate: AnyObject {
     func checkBoxHighlight(cb: CheckBoxView)
 }

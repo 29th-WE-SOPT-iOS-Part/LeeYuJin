@@ -41,6 +41,7 @@ class HomeVC: UIViewController {
         let xibName = UINib(nibName: VideoTableViewCell.identifier, bundle: nil)
         videoTableView.register(xibName, forCellReuseIdentifier: VideoTableViewCell.identifier)
     }
+    
     func initVideoInfoList(){
         videoInfoList.append(contentsOf: [
             VideoInfo(videoTitle: "1차 iOS 세미나 : iOS 컴포넌트 이해, Xcode 기본 사용법, View 화면전환", channelName: "WE SOPT", totalViews: "100만", date: "3주 전", channelImageName: "wesoptProfile", thumbnailImageName: "wesoptiOSPart"),

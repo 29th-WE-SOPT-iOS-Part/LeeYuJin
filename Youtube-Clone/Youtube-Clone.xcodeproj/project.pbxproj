@@ -124,7 +124,7 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		6A88B762273531F900F0F3B0 /* Login */ = {
+		6A88B762273531F900F0F3B0 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				6A4E1E6F2710178300160586 /* CheckBox */,
@@ -132,7 +132,7 @@
 				6A4E1E67270F643400160586 /* JoinVC.swift */,
 				6A4E1E6B270F743D00160586 /* WelcomeVC.swift */,
 			);
-			path = Login;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		6A88B7632735324700F0F3B0 /* Home */ = {
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				6A88B76B2735385500F0F3B0 /* Main */,
-				6A88B762273531F900F0F3B0 /* Login */,
+				6A88B762273531F900F0F3B0 /* Auth */,
 				6A4E1E4C270F504C00160586 /* LaunchScreen.storyboard */,
 				6A4E1E47270F504300160586 /* Main.storyboard */,
 			);
