@@ -24,6 +24,13 @@
 		6A4E1E71271017B500160586 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E1E70271017B400160586 /* CheckBoxView.xib */; };
 		6A4E1E79271017E900160586 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E78271017E900160586 /* CheckBoxView.swift */; };
 		6A4E1E7C271017F800160586 /* CheckBoxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1E7B271017F800160586 /* CheckBoxDelegate.swift */; };
+		6A552B28272C045E000A1E76 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552B26272C045D000A1E76 /* VideoTableViewCell.swift */; };
+		6A552B29272C045E000A1E76 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A552B27272C045E000A1E76 /* VideoTableViewCell.xib */; };
+		6AAB7DE6272C145700C117F4 /* VideoInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7DE5272C145700C117F4 /* VideoInfoModel.swift */; };
+		6AAB7DE8272C2B8C00C117F4 /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7DE7272C2B8C00C117F4 /* ChannelCollectionViewCell.swift */; };
+		6AAB7DEA272C2C7D00C117F4 /* ChannelInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7DE9272C2C7D00C117F4 /* ChannelInfoModel.swift */; };
+		6AFE4C66273C2B8000B488B5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */; };
+		6AFE4C68273C316E00B488B5 /* CategoryInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,13 @@
 		6A4E1E70271017B400160586 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
 		6A4E1E78271017E900160586 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		6A4E1E7B271017F800160586 /* CheckBoxDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxDelegate.swift; sourceTree = "<group>"; };
+		6A552B26272C045D000A1E76 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		6A552B27272C045E000A1E76 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		6AAB7DE5272C145700C117F4 /* VideoInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoModel.swift; sourceTree = "<group>"; };
+		6AAB7DE7272C2B8C00C117F4 /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
+		6AAB7DE9272C2C7D00C117F4 /* ChannelInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoModel.swift; sourceTree = "<group>"; };
+		6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +76,7 @@
 		6A4E1E35270F504300160586 = {
 			isa = PBXGroup;
 			children = (
-				6A4E1E40270F504300160586 /* 29th-week1-homework */,
+				6A4E1E40270F504300160586 /* Youtube-Clone */,
 				6A4E1E3F270F504300160586 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,27 +89,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A4E1E40270F504300160586 /* 29th-week1-homework */ = {
+		6A4E1E40270F504300160586 /* Youtube-Clone */ = {
 			isa = PBXGroup;
 			children = (
-				6A4E1E6F2710178300160586 /* CheckBox */,
-				6A4E1E41270F504300160586 /* AppDelegate.swift */,
-				6A4E1E43270F504300160586 /* SceneDelegate.swift */,
-				6A4E1E47270F504300160586 /* Main.storyboard */,
-				6A0FD7042722D40A00508411 /* TabBarController.swift */,
-				6A0FD7072722D43A00508411 /* HomeVC.swift */,
-				6A0FD70A2722D44D00508411 /* ShortsVC.swift */,
-				6A0FD70D2722D47300508411 /* AdditionVC.swift */,
-				6A0FD7102722D48100508411 /* SubscribeVC.swift */,
-				6A0FD7132722D4F500508411 /* LibraryVC.swift */,
-				6A4E1E4A270F504C00160586 /* Assets.xcassets */,
-				6A4E1E4C270F504C00160586 /* LaunchScreen.storyboard */,
-				6A4E1E4F270F504C00160586 /* Info.plist */,
-				6A4E1E64270F63FB00160586 /* LogInVC.swift */,
-				6A4E1E67270F643400160586 /* JoinVC.swift */,
-				6A4E1E6B270F743D00160586 /* WelcomeVC.swift */,
+				6A88B761273531B700F0F3B0 /* Source */,
+				6A88B7602735316700F0F3B0 /* Resource */,
 			);
-			name = "29th-week1-homework";
 			path = "Youtube-Clone";
 			sourceTree = "<group>";
 		};
@@ -107,6 +106,115 @@
 				6A4E1E7B271017F800160586 /* CheckBoxDelegate.swift */,
 			);
 			path = CheckBox;
+			sourceTree = "<group>";
+		};
+		6A88B7602735316700F0F3B0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E1E4A270F504C00160586 /* Assets.xcassets */,
+				6A4E1E43270F504300160586 /* SceneDelegate.swift */,
+				6A4E1E41270F504300160586 /* AppDelegate.swift */,
+				6A4E1E4F270F504C00160586 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6A88B761273531B700F0F3B0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6A88B769273533A100F0F3B0 /* Model */,
+				6A88B768273532EF00F0F3B0 /* Screen */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6A88B762273531F900F0F3B0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E1E6F2710178300160586 /* CheckBox */,
+				6A4E1E64270F63FB00160586 /* LogInVC.swift */,
+				6A4E1E67270F643400160586 /* JoinVC.swift */,
+				6A4E1E6B270F743D00160586 /* WelcomeVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6A88B7632735324700F0F3B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FD7072722D43A00508411 /* HomeVC.swift */,
+				6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */,
+				6AAB7DE7272C2B8C00C117F4 /* ChannelCollectionViewCell.swift */,
+				6A552B27272C045E000A1E76 /* VideoTableViewCell.xib */,
+				6A552B26272C045D000A1E76 /* VideoTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6A88B7642735325600F0F3B0 /* Shorts */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FD70A2722D44D00508411 /* ShortsVC.swift */,
+			);
+			path = Shorts;
+			sourceTree = "<group>";
+		};
+		6A88B7652735326300F0F3B0 /* Addition */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FD70D2722D47300508411 /* AdditionVC.swift */,
+			);
+			path = Addition;
+			sourceTree = "<group>";
+		};
+		6A88B7662735327300F0F3B0 /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FD7102722D48100508411 /* SubscribeVC.swift */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		6A88B7672735327E00F0F3B0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FD7132722D4F500508411 /* LibraryVC.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		6A88B768273532EF00F0F3B0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6A88B76B2735385500F0F3B0 /* Main */,
+				6A88B762273531F900F0F3B0 /* Auth */,
+				6A4E1E4C270F504C00160586 /* LaunchScreen.storyboard */,
+				6A4E1E47270F504300160586 /* Main.storyboard */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		6A88B769273533A100F0F3B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AAB7DE9272C2C7D00C117F4 /* ChannelInfoModel.swift */,
+				6AAB7DE5272C145700C117F4 /* VideoInfoModel.swift */,
+				6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A88B76B2735385500F0F3B0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FD7042722D40A00508411 /* TabBarController.swift */,
+				6A88B7632735324700F0F3B0 /* Home */,
+				6A88B7672735327E00F0F3B0 /* Library */,
+				6A88B7662735327300F0F3B0 /* Subscribe */,
+				6A88B7652735326300F0F3B0 /* Addition */,
+				6A88B7642735325600F0F3B0 /* Shorts */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +277,7 @@
 				6A4E1E4E270F504C00160586 /* LaunchScreen.storyboard in Resources */,
 				6A4E1E4B270F504C00160586 /* Assets.xcassets in Resources */,
 				6A4E1E49270F504300160586 /* Main.storyboard in Resources */,
+				6A552B29272C045E000A1E76 /* VideoTableViewCell.xib in Resources */,
 				6A4E1E71271017B500160586 /* CheckBoxView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,14 +293,20 @@
 				6A0FD70B2722D44D00508411 /* ShortsVC.swift in Sources */,
 				6A0FD7052722D40A00508411 /* TabBarController.swift in Sources */,
 				6A0FD70E2722D47300508411 /* AdditionVC.swift in Sources */,
+				6AFE4C66273C2B8000B488B5 /* CategoryCollectionViewCell.swift in Sources */,
 				6A4E1E79271017E900160586 /* CheckBoxView.swift in Sources */,
 				6A0FD7082722D43A00508411 /* HomeVC.swift in Sources */,
+				6AFE4C68273C316E00B488B5 /* CategoryInfoModel.swift in Sources */,
 				6A4E1E42270F504300160586 /* AppDelegate.swift in Sources */,
 				6A4E1E44270F504300160586 /* SceneDelegate.swift in Sources */,
 				6A4E1E68270F643400160586 /* JoinVC.swift in Sources */,
+				6A552B28272C045E000A1E76 /* VideoTableViewCell.swift in Sources */,
+				6AAB7DE8272C2B8C00C117F4 /* ChannelCollectionViewCell.swift in Sources */,
 				6A0FD7142722D4F500508411 /* LibraryVC.swift in Sources */,
 				6A4E1E6C270F743E00160586 /* WelcomeVC.swift in Sources */,
 				6A4E1E7C271017F800160586 /* CheckBoxDelegate.swift in Sources */,
+				6AAB7DE6272C145700C117F4 /* VideoInfoModel.swift in Sources */,
+				6AAB7DEA272C2C7D00C117F4 /* ChannelInfoModel.swift in Sources */,
 				6A0FD7112722D48100508411 /* SubscribeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H85AXMVD3;
-				INFOPLIST_FILE = "Youtube-Clone/Info.plist";
+				INFOPLIST_FILE = "Youtube-Clone/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,7 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H85AXMVD3;
-				INFOPLIST_FILE = "Youtube-Clone/Info.plist";
+				INFOPLIST_FILE = "Youtube-Clone/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
