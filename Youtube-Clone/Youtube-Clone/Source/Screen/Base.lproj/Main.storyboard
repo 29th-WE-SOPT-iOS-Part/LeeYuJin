@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N1h-fG-fLN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a0W-Of-WIs">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -484,20 +484,36 @@
                                     <constraint firstAttribute="height" constant="48" id="IXK-9s-dlT"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhE-oO-XnX">
-                                    <size key="itemSize" width="104" height="35"/>
+                                    <size key="itemSize" width="52" height="35"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iO6-rc-8em">
-                                        <rect key="frame" x="0.0" y="6.666666666666667" width="104" height="35"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="iO6-rc-8em" customClass="CategoryCollectionViewCell" customModule="Youtube_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="6.666666666666667" width="52" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MaN-29-u9v">
-                                            <rect key="frame" x="0.0" y="0.0" width="104" height="35"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="52" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmz-Qa-vlO">
+                                                    <rect key="frame" x="3" y="1" width="46" height="33"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="버튼"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qmz-Qa-vlO" firstAttribute="top" secondItem="MaN-29-u9v" secondAttribute="top" constant="1" id="0ck-4h-PM8"/>
+                                                <constraint firstAttribute="bottom" secondItem="qmz-Qa-vlO" secondAttribute="bottom" constant="1" id="7Sc-ma-5Xq"/>
+                                                <constraint firstAttribute="trailing" secondItem="qmz-Qa-vlO" secondAttribute="trailing" constant="3" id="QXd-sw-Y77"/>
+                                                <constraint firstItem="qmz-Qa-vlO" firstAttribute="leading" secondItem="MaN-29-u9v" secondAttribute="leading" constant="3" id="bh2-2H-2z5"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="104" height="35"/>
+                                        <size key="customSize" width="52" height="35"/>
+                                        <connections>
+                                            <outlet property="categoryButton" destination="qmz-Qa-vlO" id="8Ym-pG-anU"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -522,6 +538,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="nIb-oZ-hZn"/>
                     <connections>
+                        <outlet property="categoryCollectionView" destination="GlD-ff-dXZ" id="uj6-er-esa"/>
                         <outlet property="channelCollectionView" destination="Ct1-S4-dA9" id="9ei-lx-XaI"/>
                         <outlet property="videoTableView" destination="bkE-6y-bCr" id="U0m-Ov-fSO"/>
                     </connections>

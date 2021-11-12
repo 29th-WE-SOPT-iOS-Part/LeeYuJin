@@ -29,6 +29,8 @@
 		6AAB7DE6272C145700C117F4 /* VideoInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7DE5272C145700C117F4 /* VideoInfoModel.swift */; };
 		6AAB7DE8272C2B8C00C117F4 /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7DE7272C2B8C00C117F4 /* ChannelCollectionViewCell.swift */; };
 		6AAB7DEA272C2C7D00C117F4 /* ChannelInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7DE9272C2C7D00C117F4 /* ChannelInfoModel.swift */; };
+		6AFE4C66273C2B8000B488B5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */; };
+		6AFE4C68273C316E00B488B5 /* CategoryInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		6AAB7DE5272C145700C117F4 /* VideoInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoModel.swift; sourceTree = "<group>"; };
 		6AAB7DE7272C2B8C00C117F4 /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
 		6AAB7DE9272C2C7D00C117F4 /* ChannelInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoModel.swift; sourceTree = "<group>"; };
+		6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				6A0FD7072722D43A00508411 /* HomeVC.swift */,
+				6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */,
 				6AAB7DE7272C2B8C00C117F4 /* ChannelCollectionViewCell.swift */,
 				6A552B27272C045E000A1E76 /* VideoTableViewCell.xib */,
 				6A552B26272C045D000A1E76 /* VideoTableViewCell.swift */,
@@ -194,6 +199,7 @@
 			children = (
 				6AAB7DE9272C2C7D00C117F4 /* ChannelInfoModel.swift */,
 				6AAB7DE5272C145700C117F4 /* VideoInfoModel.swift */,
+				6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,8 +293,10 @@
 				6A0FD70B2722D44D00508411 /* ShortsVC.swift in Sources */,
 				6A0FD7052722D40A00508411 /* TabBarController.swift in Sources */,
 				6A0FD70E2722D47300508411 /* AdditionVC.swift in Sources */,
+				6AFE4C66273C2B8000B488B5 /* CategoryCollectionViewCell.swift in Sources */,
 				6A4E1E79271017E900160586 /* CheckBoxView.swift in Sources */,
 				6A0FD7082722D43A00508411 /* HomeVC.swift in Sources */,
+				6AFE4C68273C316E00B488B5 /* CategoryInfoModel.swift in Sources */,
 				6A4E1E42270F504300160586 /* AppDelegate.swift in Sources */,
 				6A4E1E44270F504300160586 /* SceneDelegate.swift in Sources */,
 				6A4E1E68270F643400160586 /* JoinVC.swift in Sources */,
