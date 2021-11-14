@@ -460,9 +460,6 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="wesoptProfile" title=""/>
-                                        <connections>
-                                            <action selector="touchUpProfileButton:" destination="a0W-Of-WIs" eventType="touchUpInside" id="BMM-IO-Mrt"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -597,7 +594,7 @@
         <!--Navigation Controller-->
         <scene sceneID="8hs-QD-bUA">
             <objects>
-                <navigationController storyboardIdentifier="UINavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="N1h-fG-fLN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="N1h-fG-fLN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vIj-Oh-Efl">
                         <autoresizingMask key="autoresizingMask"/>
