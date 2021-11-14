@@ -33,6 +33,7 @@
 		6AFDB19427410D1100FACA2D /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDB19327410D1100FACA2D /* NetworkResult.swift */; };
 		6AFDB19627410DBD00FACA2D /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDB19527410DBD00FACA2D /* LoginResponseDataModel.swift */; };
 		6AFDB19827410E7F00FACA2D /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDB19727410E7F00FACA2D /* UserSignService.swift */; };
+		6AFDB19A27413DA900FACA2D /* JoinResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDB19927413DA900FACA2D /* JoinResponseDataModel.swift */; };
 		6AFE4C66273C2B8000B488B5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */; };
 		6AFE4C68273C316E00B488B5 /* CategoryInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */; };
 		E017FABD048DFF35CFC7F7D9 /* Pods_Youtube_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57A20C47BF35356DD867FFA /* Pods_Youtube_Clone.framework */; };
@@ -69,6 +70,7 @@
 		6AFDB19327410D1100FACA2D /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		6AFDB19527410DBD00FACA2D /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
 		6AFDB19727410E7F00FACA2D /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
+		6AFDB19927413DA900FACA2D /* JoinResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinResponseDataModel.swift; sourceTree = "<group>"; };
 		6AFE4C65273C2B8000B488B5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		6AFE4C67273C316E00B488B5 /* CategoryInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoModel.swift; sourceTree = "<group>"; };
 		F57A20C47BF35356DD867FFA /* Pods_Youtube_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youtube_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +241,7 @@
 				6AFDB19027410B5100FACA2D /* APIConstants.swift */,
 				6AFDB19327410D1100FACA2D /* NetworkResult.swift */,
 				6AFDB19527410DBD00FACA2D /* LoginResponseDataModel.swift */,
+				6AFDB19927413DA900FACA2D /* JoinResponseDataModel.swift */,
 				6AFDB19727410E7F00FACA2D /* UserSignService.swift */,
 			);
 			path = Network;
@@ -385,6 +388,7 @@
 				6A4E1E79271017E900160586 /* CheckBoxView.swift in Sources */,
 				6AFDB19427410D1100FACA2D /* NetworkResult.swift in Sources */,
 				6AFDB19827410E7F00FACA2D /* UserSignService.swift in Sources */,
+				6AFDB19A27413DA900FACA2D /* JoinResponseDataModel.swift in Sources */,
 				6A0FD7082722D43A00508411 /* HomeVC.swift in Sources */,
 				6AFDB19627410DBD00FACA2D /* LoginResponseDataModel.swift in Sources */,
 				6AFE4C68273C316E00B488B5 /* CategoryInfoModel.swift in Sources */,

@@ -25,8 +25,7 @@ class LogInVC: UIViewController {
     
     @IBAction func touchUpNextButton(_ sender: Any) {
         
-//        getUserData()
-//        getUserDataUsingQuery()
+
         requestLogin()
         
         
@@ -66,11 +65,12 @@ class LogInVC: UIViewController {
         switch(isSuccess){
         case true :
             let okAction = UIAlertAction(title: "확인" ,style: .default){action -> Void in self.moveToWelcome()}
-                alert.addAction(okAction)
+            alert.addAction(okAction)
         case false :
             let okAction = UIAlertAction(title: "확인" ,style: .default)
-            
+            alert.addAction(okAction)
         }
+        
         
             present(alert, animated: true)
     }
@@ -149,7 +149,7 @@ extension LogInVC{
             case .requestErr(let msg):
                 
                 if let msg = msg as? String{
-                    self.popAlert(title: "로그인", message: msg, isSuccess: true)
+                    self.popAlert(title: "로그인", message: msg, isSuccess: false)
                 }
                 
                 

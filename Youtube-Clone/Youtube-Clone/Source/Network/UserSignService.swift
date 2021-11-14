@@ -45,6 +45,41 @@ struct UserSignService{
         
     }
     
+    func Join(email: String,
+              name: String,
+               password: String,
+               completion: @escaping (NetworkResult<Any>) -> (Void)){
+        
+        
+        let url = APIConstants.joinURL
+        
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        
+        let body: Parameters = [
+            "email": email,
+            "name": name,
+            "password": password
+        ]
+        
+        let dataRequest = AF.request(url, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
+        
+        dataRequest.responseData { dataResponse in
+            switch dataResponse.result {
+        case .success:
+            guard let statusCode = dataResponse.response?.statusCode else {return}
+            guard let value  = dataResponse.value else {return}
+            let networkResult = self.judgeLoginStatus(by: statusCode, value)
+            completion(networkResult)
+        case .failure(let err):
+            print(err)
+            completion(.networkFail)
+        }
+            
+    }
+        
+    }
     
     func readUserDataUsingQuery(email: String,
                       completion: @escaping (NetworkResult<Any>) -> (Void)){
@@ -84,8 +119,8 @@ struct UserSignService{
     private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         
         switch statusCode{
-        case 200: return isValidLoginData(data: data)
-        case 400: return .pathErr
+        case 200: return isValidLoginData(data: data,valid: true)
+        case 400..<500: return isValidLoginData(data: data,valid: false)
         case 500: return .serverErr
         default: return .networkFail
         }
@@ -121,11 +156,15 @@ struct UserSignService{
         
     }
     
- private func isValidLoginData(data: Data) -> NetworkResult<Any>{
+    private func isValidLoginData(data: Data,valid: Bool) -> NetworkResult<Any>{
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data)
         else {return .pathErr}
-        return .success(decodedData)
+        if valid {
+            return .success(decodedData)
+        } else {
+            return .requestErr(decodedData.message)
+        }
     }
 }
 

@@ -14,5 +14,5 @@ struct APIConstants {
     
     static let loginURL = baseURL + "/user/login"
     static let readUserURL = baseURL + "/user/"
-    
+    static let joinURL = baseURL + "/user/signup"
 }
