@@ -25,10 +25,11 @@ class LogInVC: UIViewController {
     
     @IBAction func touchUpNextButton(_ sender: Any) {
         
-
-        requestLogin()
+        guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
+        nextVC.name = nameTextField.text
         
+        self.navigationController?.pushViewController(nextVC, animated: true)
         
     }
     override func viewDidLoad() {
@@ -46,33 +47,6 @@ class LogInVC: UIViewController {
         nameTextField.text = ""
         infoTextField.text = ""
         pwTextField.text = ""
-    }
-    
-    func moveToWelcome(){
-        guard let nextVC=self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-        
-        nextVC.name = nameTextField.text
-        
-        self.navigationController?.pushViewController(nextVC, animated: true)
-        
-        print("movetowelcome")
-   
-    }
-    func popAlert(title: String, message: String, isSuccess: Bool) {
-            let alert = UIAlertController(title: title,
-                                          message: message,
-                                          preferredStyle: .alert)
-        switch(isSuccess){
-        case true :
-            let okAction = UIAlertAction(title: "확인" ,style: .default){action -> Void in self.moveToWelcome()}
-            alert.addAction(okAction)
-        case false :
-            let okAction = UIAlertAction(title: "확인" ,style: .default)
-            alert.addAction(okAction)
-        }
-        
-        
-            present(alert, animated: true)
     }
     
     func layout() {
@@ -132,43 +106,5 @@ extension UIColor{
    
     
 }
-
-extension LogInVC{
-    
-    func requestLogin(){
-        UserSignService.shared.login(email: infoTextField.text ?? "", password: pwTextField.text ?? "") { responseData in
-            switch responseData {
-            case .success(let loginResponse):
-                guard let response = loginResponse as? LoginResponseData else {return}
-                if let userData = response.data {
-                    self.popAlert(title: "로그인", message: response.message, isSuccess: true)
-                   
-                }
-                
-                
-            case .requestErr(let msg):
-                
-                if let msg = msg as? String{
-                    self.popAlert(title: "로그인", message: msg, isSuccess: false)
-                }
-                
-                
-            case .pathErr:
-                print("pathErr")
-            case .serverErr:
-                print("serverErr")
-            case .networkFail:
-                print("networkFail")
-            }
-            
-        }
-    }
-    
-    
-
-    
-  
-}
-
 
 

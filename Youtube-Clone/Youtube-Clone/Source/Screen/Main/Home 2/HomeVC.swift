@@ -19,16 +19,6 @@ class HomeVC: UIViewController {
     @IBOutlet weak var videoTableView: UITableView!
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
-    
-    @IBAction func touchUpProfileButton(_ sender: Any) {
-        
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "UINavigationController") else {return}
-        
-        nextVC.modalPresentationStyle = .fullScreen
-        nextVC.modalTransitionStyle = .crossDissolve
-        self.present(nextVC,animated: true,completion: nil)
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,6 +49,9 @@ class HomeVC: UIViewController {
         
     }
     
+    func registerCVC(){
+        categoryCollectionView.register(CategoryCollectionViewCell.self, forCellWithReuseIdentifier: "CategoryCollectionViewCell")
+    }
     
     func registerXib() {
         let xibName = UINib(nibName: VideoTableViewCell.identifier, bundle: nil)
