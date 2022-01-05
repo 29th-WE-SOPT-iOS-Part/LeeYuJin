@@ -6,6 +6,9 @@
 //
 
 import UIKit
+protocol tableDelegate{
+    func tableDelegate()
+}
 
 class VideoTableViewCell: UITableViewCell {
     
@@ -17,12 +20,27 @@ class VideoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var subTitleLabel: UILabel!
     
+    var delegate: tableDelegate?
+    
+//    @IBAction func tapImageGesture(_ sender: Any) {
+//        print("tapped")
+//    }
+    
     @IBOutlet weak var menuButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapImageView(gestureRecognizer:)))
+        
+        thumbnailImageView.addGestureRecognizer(tapRecognizer)
+        
     }
-
+    @objc func tapImageView(gestureRecognizer: UIGestureRecognizer){
+        delegate?.tableDelegate()
+    }
+    
+  
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

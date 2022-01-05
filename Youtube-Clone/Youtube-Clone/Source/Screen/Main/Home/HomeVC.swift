@@ -115,7 +115,7 @@ extension HomeVC: UITableViewDelegate{
     
 }
 
-extension HomeVC: UITableViewDataSource{
+extension HomeVC: UITableViewDataSource,UIGestureRecognizerDelegate,tableDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videoInfoList.count
     }
@@ -125,9 +125,14 @@ extension HomeVC: UITableViewDataSource{
         
         cell.setData(videoInfo: videoInfoList[indexPath.row])
         
+        cell.delegate = self
+        
         return cell
     }
     
+    func tableDelegate(){
+        print("눌렀당")
+    }
     
 }
 
