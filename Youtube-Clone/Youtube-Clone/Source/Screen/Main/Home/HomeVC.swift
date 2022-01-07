@@ -140,7 +140,14 @@ extension HomeVC: UITableViewDataSource,UIGestureRecognizerDelegate{
 
 extension HomeVC: TapThumbnailImageDelegate{
     func tapThumbnailImage(cell: VideoTableViewCell){
-       print("tapped")
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PlayViewController") as? PlayViewController
+        else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.thumbnailImage = cell.thumbnailImageView.image
+        nextVC.titleText = cell.titleLabel.text
+        nextVC.subTitleText = cell.subTitleLabel.text
+        self.present(nextVC, animated: true, completion: nil)
         
     }
     
