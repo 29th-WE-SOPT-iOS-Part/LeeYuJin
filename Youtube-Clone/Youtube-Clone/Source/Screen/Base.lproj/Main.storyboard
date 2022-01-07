@@ -392,6 +392,9 @@
                                 <rect key="frame" x="16" y="63" width="40" height="24"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Vector" title=""/>
+                                <connections>
+                                    <action selector="touchUpBackButton:" destination="ejD-Kz-hxI" eventType="touchUpInside" id="2fX-sP-4cN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g6h-ej-D03"/>
