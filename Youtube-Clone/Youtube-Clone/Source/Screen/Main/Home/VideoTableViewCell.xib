@@ -71,6 +71,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="channelImageView" destination="O5T-D2-2Ay" id="GaZ-ep-EgF"/>
+                <outlet property="menuButton" destination="Num-Ap-Bam" id="hWB-ye-uHm"/>
                 <outlet property="subTitleLabel" destination="t13-31-1dA" id="J03-1B-IME"/>
                 <outlet property="thumbnailImageView" destination="hM8-zf-P9r" id="Q3M-W6-ji1"/>
                 <outlet property="titleLabel" destination="A94-On-pLv" id="6hM-Ay-Kbv"/>

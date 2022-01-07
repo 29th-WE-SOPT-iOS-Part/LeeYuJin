@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeVC: UIViewController {
+  
+    
     
     var videoInfoList: [VideoInfo] = []
     
@@ -41,6 +43,9 @@ class HomeVC: UIViewController {
         
         setDelegation()
         
+       
+        
+        
         
         
         
@@ -56,6 +61,8 @@ class HomeVC: UIViewController {
         
         categoryCollectionView.dataSource = self
         categoryCollectionView.delegate = self
+        
+    
         
     }
     
@@ -101,8 +108,7 @@ class HomeVC: UIViewController {
         
     }
     
-
-
+    
 }
 
 
@@ -115,7 +121,7 @@ extension HomeVC: UITableViewDelegate{
     
 }
 
-extension HomeVC: UITableViewDataSource,UIGestureRecognizerDelegate,tableDelegate{
+extension HomeVC: UITableViewDataSource,UIGestureRecognizerDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videoInfoList.count
     }
@@ -124,14 +130,18 @@ extension HomeVC: UITableViewDataSource,UIGestureRecognizerDelegate,tableDelegat
         guard let cell = tableView.dequeueReusableCell(withIdentifier: VideoTableViewCell.identifier) as? VideoTableViewCell else { return UITableViewCell()}
         
         cell.setData(videoInfo: videoInfoList[indexPath.row])
-        
-        cell.delegate = self
-        
+        cell.tapThumbnailImageDelegate = self
         return cell
     }
     
-    func tableDelegate(){
-        print("눌렀당")
+   
+    
+}
+
+extension HomeVC: TapThumbnailImageDelegate{
+    func tapThumbnailImage(cell: VideoTableViewCell){
+       print("tapped")
+        
     }
     
 }
