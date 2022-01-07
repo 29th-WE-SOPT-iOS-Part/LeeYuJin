@@ -6,8 +6,9 @@
 //
 
 import UIKit
-protocol tableDelegate{
-    func tableDelegate()
+
+protocol TapThumbnailImageDelegate{
+    func tapThumbnailImage(cell: VideoTableViewCell)
 }
 
 class VideoTableViewCell: UITableViewCell {
@@ -20,24 +21,29 @@ class VideoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var subTitleLabel: UILabel!
     
-    var delegate: tableDelegate?
+    var tapThumbnailImageDelegate: TapThumbnailImageDelegate?
     
-//    @IBAction func tapImageGesture(_ sender: Any) {
-//        print("tapped")
-//    }
-    
+
     @IBOutlet weak var menuButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setGestureRecognizer()
+       
         
+    }
+    
+    func setGestureRecognizer(){
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapImageView(gestureRecognizer:)))
         
         thumbnailImageView.addGestureRecognizer(tapRecognizer)
-        
+        thumbnailImageView.isUserInteractionEnabled = true
     }
+    
     @objc func tapImageView(gestureRecognizer: UIGestureRecognizer){
-        delegate?.tableDelegate()
+        tapThumbnailImageDelegate?.tapThumbnailImage(cell: self)
+        
+       
     }
     
   
